@@ -1,9 +1,7 @@
 public class TrafficMinimization{
-	 // method performServerplacement controls the flow of the program
+	
    public int performServerplacement (int[] client_array, int k_servers) {
        int len = client_array.length;
-
-	   // "result" 3D array to keep track of intermediate results
        int[][][] result = getMatrixForOneServer(client_array, k_servers, 
 	                       new int[len][len][k_servers+1], len);
 	            // if servers are greater than one then function 
