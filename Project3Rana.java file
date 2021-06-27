@@ -11,19 +11,8 @@ int[][][] result = getMatrixForOneServer(client_array, k_servers,
 if(k_servers>1) 
 result = getMatrixForRestOfServers(client_array, k_servers, result,
 	    len);
-
-//System.out.println("Minimized value:" + result[0][len-1][k_servers]);
 	            
 for(int i=1 ; i <= k_servers; i++){
-	
-
-//System.out.println("Given the array of size: " + len +
-
-//", using number of server: "+ i +" " + ", Minimized traffic is: " + result[0][len-1][i]);
-	            }
-	            return result[0][len-1][k_servers];
-	}	
-
 //to calculate values when server is equal to 1
 public int[][][] getMatrixForOneServer(int[] client_array, int k_servers,int[][][] result, int len){
     for(int i = 0; i < len; i++) {
